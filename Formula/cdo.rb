@@ -1,9 +1,9 @@
 class Cdo < Formula
   desc "Operators to manipulate and analyse climate and NWP model data"
   homepage "https://code.zmaw.de/projects/cdo"
-  url "https://code.mpimet.mpg.de/attachments/download/18264/cdo-1.9.5.tar.gz"
-  sha256 "48ed65cc5b436753c8e7f9eadd8aa97376698ce230ceafed2a4350a5b1a27148"
-
+  url "https://code.mpimet.mpg.de/attachments/download/19299/cdo-1.9.6.tar.gz"
+  sha256 "b31474c94548d21393758caa33f35cf7f423d5dfc84562ad80a2bdcb725b5585"
+  
   option "with-grib2", "Compile Fortran bindings"
   deprecated_option "enable-grib2" => "with-grib2"
   option "with-openmp", "Compile with OpenMP support"
