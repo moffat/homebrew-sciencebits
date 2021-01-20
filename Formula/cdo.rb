@@ -38,3 +38,5 @@ class Cdo < Formula
     system "#{bin}/cdo", "-h"
   end
 end
+
+disable! date: "2020-01-20", because: "it is now in homebrew core. Please reinstall it as follows:\nbrew untap moffat/sciencebits\nbrew install cdo\n"
