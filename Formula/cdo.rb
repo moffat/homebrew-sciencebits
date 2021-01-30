@@ -18,6 +18,8 @@ class Cdo < Formula
   depends_on "netcdf"
   depends_on "szip"
 
+  disable! date: "2020-01-20", because: "it is now in homebrew core. Please reinstall it as follows:\nbrew untap moffat/sciencebits\nbrew install cdo\n"
+
   def install
     args = ["--disable-debug", "--disable-dependency-tracking",
             "--prefix=#{prefix}", "LIBS=-lhdf5",
@@ -39,4 +41,4 @@ class Cdo < Formula
   end
 end
 
-disable! date: "2020-01-20", because: "it is now in homebrew core. Please reinstall it as follows:\nbrew untap moffat/sciencebits\nbrew install cdo\n"
+
